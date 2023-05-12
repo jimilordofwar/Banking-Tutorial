@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My own little bank app</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<!-- header for banking app nav bar -->
+		<header>
+			<nav>
+				<a class="nav-item" href="/index.html">Home</a>
+				<a class="nav-item" href="/pages/transfer.html">Transfer</a>
+				<a class="nav-item" href="/pages/withdraw.html">Withdraw</a>
+				<a class="nav-item" href="/pages/deposit.html">Deposit</a>
+			</nav>
+		</header>
+		<main>
+			<div class="hero-image">
+				<div class="hero-text">
+					<h1>My own little bank app</h1>
+					<p>Transfer, withdraw, deposit</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="account-form" id="login">
+					<form action="login.php" method="post">
+						<div class="input-container">
+							<label for="lUsername">Username</label>
+							<input type="text" name="username" id="lUsername" placeholder="Username">
+						</div>
+						<div class="input-container">
+							<label for="lPassword">Password</label>
+							<input type="password" name="password" id="lPassword" placeholder="Password">
+						</div>
+						<input type="submit" value="Login">
+					</form>
+				</div>
+				<div class="account-form" id="signup">
+					<form action="signup.php" method="post">
+						<div class="input-container">
+							<label for="rUsername">Username</label>
+							<input type="text" name="username" id="rUsername" placeholder="Username">
+						</div>
+						<div class="input-container">
+							<label for="rPassword">Password</label>
+							<input type="password" name="password" id="rPassword" placeholder="Password">
+						</div>
+						<input type="submit" value="Sign Up">
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
